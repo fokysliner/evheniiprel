@@ -3,8 +3,40 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Видача • Telegram</title>
-
+  <title>• Telegram</title>
+ <!-- TikTok Pixel Code Start -->
+  <script>
+    !function(w,d,t){
+      w.TiktokAnalyticsObject = t;
+      var ttq = w[t] = w[t] || [];
+      ttq.methods = ["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"];
+      ttq.setAndDefer = function(obj, method){
+        obj[method] = function(){
+          obj.push([method].concat(Array.prototype.slice.call(arguments,0)));
+        };
+      };
+      for(var i=0; i<ttq.methods.length; i++){
+        ttq.setAndDefer(ttq, ttq.methods[i]);
+      }
+      ttq.load = function(id){
+        var script = d.createElement("script");
+        script.async = true;
+        script.src = "https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=" + id;
+        var first = d.getElementsByTagName("script")[0];
+        first.parentNode.insertBefore(script, first);
+      };
+      // **ВАШ ТИКТОК PIXEL ID**
+      ttq.load('D3J6B0BC77UEJB9HCGOG');
+      // Сработает page-view
+      ttq.page();
+    }(window, document, 'ttq');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+         src="https://analytics.tiktok.com/i18n/pixel/events.gif?sdkid=D3J6B0BC77UEJB9HCGOG"
+         alt="TikTok pixel"/>
+  </noscript>
+  <!-- TikTok Pixel Code End -->
   <!-- Шрифт -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
